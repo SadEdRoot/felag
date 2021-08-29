@@ -1,0 +1,40 @@
+.training {
+  background-color: $bg-hard-black;
+}
+
+.training__header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.training__subheader {
+  margin: 10px auto;
+  max-width: 960px;
+}
+
+.training__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+}
+
+.training__card {
+  display: flex;
+  flex-direction: column;
+}
+
+.training__card_text {
+  margin-top: 0;
+  margin-bottom: auto;
+}
+
+.training__card_img {
+  margin-top: 20px;
+
+}
+
+.training__text_block {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}

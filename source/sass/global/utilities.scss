@@ -1,0 +1,16 @@
+.container {
+  width: 100%;
+  padding: 0 10px;
+
+  @media (min-width: $viewpoint--desktop) {
+    max-width: 1200px;
+    padding: 0 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.container--pads {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}

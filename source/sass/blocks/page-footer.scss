@@ -1,0 +1,48 @@
+.page-footer__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.page-footer__icons {
+  display: flex;
+}
+
+.page-footer__icon {
+  width: 48px;
+  height: 48px;
+  background-color: $color-main-text;
+  display: block;
+  border-radius: 50%;
+  margin-left: 50px;
+}
+
+.page-footer__sponsors {
+  font-size: 18px;
+}
+.page-footer__link {
+  color: $color-red-text;
+  width: fit-content;
+
+  &--center {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 18px;
+  }
+}
+
+.page-footer__year {
+  text-align: center;
+  font-size: 18px;
+}
+
+.page-footer__text {
+  color: #a4a9af;
+  text-align: justify;
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+}

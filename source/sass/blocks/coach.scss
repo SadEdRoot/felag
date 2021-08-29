@@ -1,0 +1,44 @@
+.coach__header {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.coach__card {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 50px;
+
+  @media (min-width: $viewpoint--desktop) {
+    margin-top: 100px;
+    grid-template-columns: 1fr 2fr;
+
+  }
+}
+
+.coach__img {
+  justify-self: center;
+  align-items: center;
+
+  @media (min-width: $viewpoint--desktop) {
+    width: 250px;
+
+    width: 250px;
+  }
+
+}
+
+.coach__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+
+.coach__info p {
+  padding: 0;
+  margin: 0;
+}
+
+.coach__subheader {
+  margin: 0;
+}

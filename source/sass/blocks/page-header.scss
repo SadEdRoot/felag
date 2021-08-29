@@ -1,0 +1,63 @@
+.page-header {
+  //TODO: сделать фиксированное меню с появляющимся бакграундом.
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: $bg-hard-black;
+
+  @media (min-width: $viewpoint--desktop){
+    background-color: transparent;
+  }
+}
+
+.page-header__wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page-header__burger-btn {
+  padding: 0;
+
+  color: $color-main-text;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+
+  svg {
+    fill: currentColor;
+  }
+
+  &:hover {
+    color: $color-second-text;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $viewpoint--desktop) {
+    display: none;
+  }
+
+  .page-header__menu-burger {
+    display: block;
+  }
+
+  .page-header__menu-cross {
+    display: none;
+  }
+
+  &--active {
+    .page-header__menu-burger {
+      display: none;
+    }
+
+    .page-header__menu-cross {
+      display: block;
+    }
+  }
+}

@@ -1,13 +1,9 @@
 .page-header {
-  //TODO: сделать фиксированное меню с появляющимся бакграундом.
   position: fixed;
   width: 100%;
   z-index: 100;
   background-color: $bg-hard-black;
 
-  @media (min-width: $viewpoint--desktop){
-    background-color: transparent;
-  }
 }
 
 .page-header__wrapper {

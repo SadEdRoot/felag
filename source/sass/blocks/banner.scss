@@ -1,4 +1,6 @@
 .banner {
+  display: none;
+
   background-color: $bg-main-red;
 
   margin-right: auto;
@@ -6,6 +8,10 @@
 
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media (min-width: $viewpoint--desktop) {
+    display: block;
+  }
 }
 
 .banner__text {

@@ -13,7 +13,7 @@
 <header  class="page-header page-header--close">
   <div class="container">
     <div class="page-header__wrapper">
-      <img src="img/logo-wolf.png" alt="Logo">
+      <img class="page-header__logo" src="img/logo-wolf.png" alt="Logo" width="44" height="51">
       <button
         class="page-header__burger-btn"
         type="button"
@@ -106,9 +106,9 @@
         At the Felag Club you have access to everything you need to learn how to fight. We have an indoor arena, called a list – no cancelation due to weather. We have training equipment, called a pell, designed for weaponry for you to practice on. We have plenty of spare equipment you can borrow until you purchase your own.
       </p>
       <div class="training__grid">
-        <img src="img/train_1.jpg" alt="" width="373" height="373">
-        <img src="img/train_2.jpg" alt="" width="373" height="373">
-        <img src="img/train_3.jpg" alt="" width="373" height="373">
+        <img class="training__card_img" src="img/train_1.jpg" alt="" width="373" height="373">
+        <img class="no-mobile" src="img/train_2.jpg" alt="" width="373" height="373">
+        <img class="no-mobile" src="img/train_3.jpg" alt="" width="373" height="373">
       </div>
       <h3 class="training__subheader section_subheader">Training System</h3>
       <p class="training__text_block text__secondary">
@@ -116,7 +116,7 @@
       </p>
       <div class="training__grid">
         <div class="training__card">
-          <h4 class="section_subheader">
+          <h4 class="training__card-header section_subheader">
             Base training
           </h4>
           <p class="training__card_text text__secondary">
@@ -125,7 +125,7 @@
           <img class="training__card_img" src="img/base_1.jpg" alt="" width="373" height="373">
         </div>
         <div class="training__card">
-          <h4 class="section_subheader">
+          <h4 class="training__card-header section_subheader">
             SOFT training
           </h4>
           <p class="training__card_text text__secondary">
@@ -134,7 +134,7 @@
           <img class="training__card_img" src="img/base_2.jpg" alt="" width="373" height="373">
         </div>
         <div class="training__card">
-          <h4 class="section_subheader">
+          <h4 class="training__card-header section_subheader">
             STEEL training
           </h4>
           <p class="training__card_text text__secondary">
@@ -144,19 +144,19 @@
           <img class="training__card_img" src="img/base_3.jpg" alt="" width="373" height="373">
         </div>
       </div>
-      <h3 class="training__text_block section_subheader">Tournaments</h3>
+      <h3 class="training__subheader section_subheader">Tournaments</h3>
       <p  class="training__text_block text__secondary">
         Tournaments are a chance to pit our skills against other teams, and an important part of your development in the sport - go through your limits, be sure in your equipment, trust your team mates.. We love touraments and competitions as its a chance for us to spend time together as a club.  Plus we get to hit our friends!
       </p>
       <div class="training__grid">
-        <img src="img/tourn_1.jpg" alt="" width="373" height="373">
-        <img src="img/tourn_2.jpg" alt="" width="373" height="373">
-        <img src="img/tourn_3.jpg" alt="" width="373" height="373">
+        <img class="training__card_img" src="img/tourn_1.jpg" alt="" width="373" height="373">
+        <img class="no-mobile" src="img/tourn_2.jpg" alt="" width="373" height="373">
+        <img class="no-mobile" src="img/tourn_3.jpg" alt="" width="373" height="373">
       </div>
     </div>
   </section>
   <section class="info">
-    <div class="container">
+    <div class="container container--pads">
       <div class="info__grid">
         <div>
           <h3 class="section_subheader">Experience</h3>
@@ -196,7 +196,7 @@
       <div class="coach__card">
         <img class="coach__img" src="img/Denny_trainer.png" alt="Denny Denski" width="250" height="250">
         <div class="coach__info">
-          <h3 class="section_subheader coach__subheader">Denny Dennsky</h3>
+          <h3 class="section_subheader coach__subheader">Denny Denski</h3>
           <p class="text__secondary">
             Has been a part of Felag and the HMBNZ community since 2017. Has also been a part of the team to Battle of the nations to represent NZ.
           </p>
@@ -263,12 +263,12 @@
       <div class="contacts__grid">
         <div>
           <h3 class="section_subheader">Email</h3>
-          <p><a href="mailto: felagwolf@gmail.com">felagwolf@gmail.com</a></p>
+          <p><a class="contacts__link" href="mailto: felagwolf@gmail.com">felagwolf@gmail.com</a></p>
         </div>
         <div>
           <h3 class="section_subheader">Find us online</h3>
-          <p><a href="https://www.facebook.com/FelagWellington/">Facebook: FelagWellington</a></p>
-          <p><a href="https://www.instagram.com/felag_wellington/">Instagram: @felag_wellington</a></p>
+          <p><a class="contacts__link" href="https://www.facebook.com/FelagWellington/">Facebook: FelagWellington</a></p>
+          <p><a class="contacts__link" href="https://www.instagram.com/felag_wellington/">Instagram: @felag_wellington</a></p>
         </div>
       </div>
     </div>
@@ -283,12 +283,22 @@
       </p>
       <div class="page-footer__icons">
         <div class="page-footer__icon"></div>
-        <div class="page-footer__icon"></div>
+        <div class="page-footer__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:#1d1d1b;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><path class="cls-1" d="M24,3A2.92,2.92,0,0,0,23.13.89,2.88,2.88,0,0,0,21,0H3A2.9,2.9,0,0,0,.89.89,2.9,2.9,0,0,0,0,3V6H5.34A8.67,8.67,0,0,1,12,3a8.67,8.67,0,0,1,6.66,3H24Z"/><path class="cls-1" d="M6,12a5.78,5.78,0,0,0,1.76,4.24A5.78,5.78,0,0,0,12,18a5.78,5.78,0,0,0,4.24-1.76A5.78,5.78,0,0,0,18,12a5.78,5.78,0,0,0-1.76-4.24A5.78,5.78,0,0,0,12,6,5.78,5.78,0,0,0,7.76,7.76,5.78,5.78,0,0,0,6,12Z"/><path class="cls-1" d="M24,9H20.44A8.86,8.86,0,0,1,21,12a8.95,8.95,0,0,1-9,9,8.74,8.74,0,0,1-6.38-2.62A8.74,8.74,0,0,1,3,12a8.86,8.86,0,0,1,.56-3H0V21a2.9,2.9,0,0,0,.87,2.13A2.9,2.9,0,0,0,3,24H21a3,3,0,0,0,3-3Z"/></g></g></svg></div>
         <div class="page-footer__icon"></div>
       </div>
     </div>
     <p class="text__secondary page-footer__text">There are risks involved in the sport of Historical Medieval Battle (HMB). Felag Club accommodate the range of movement required for prescribed exercises, allow for correct use of specific equipment, and provide adequate space and protection to avoid potential accidents or falls. Participants in the sport of HMB with the Felag Club understand and acknowledge that Felag organisers (including all officials and event volunteers) provide no warranties, regarding their wellbeing and safety.</p>
-    <div class="page-footer__link page-footer__link--center"><a  href="">Privacy Policy</a></div>
+    <button class="page-footer__link page-footer__link--center">Privacy Policy</button>
+    <p>
+      We collect personal information from you, including information about your:
+      name
+      contact information
+      We collect your personal information in order to:
+      contact people that are interested in joining our club.
+      make sure we know where our visitors to our website are coming from.
+      Providing some information is optional. If you choose not to enter emails and phone numbers, we'll be unable to contact them about joining..
+      You have the right to ask for a copy of any personal information we hold about you, and to ask for it to be corrected if you think it is wrong. If you’d like to ask for a copy of your information, or to have it corrected, please contact us at felagwolf@gmail.com, or 021 155 6274, or 6 Elizabeth Avenue, Heretaunga, Upper Hutt 5018.
+    </p>
     <p class="page-footer__year">2021</p>
   </div>
 </footer>

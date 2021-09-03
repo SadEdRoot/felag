@@ -8,14 +8,18 @@
 }
 
 .training__subheader {
-  margin: 10px auto;
+  margin: 35px auto 18px;
   max-width: 960px;
 }
 
 .training__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 20px;
+  grid-gap: 20px;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $viewpoint--desktop) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .training__card {
@@ -26,11 +30,16 @@
 .training__card_text {
   margin-top: 0;
   margin-bottom: auto;
+  padding-bottom: 20px;
 }
 
 .training__card_img {
-  margin-top: 20px;
+  justify-self: center;
+  align-self: center;
+}
 
+.training__card-header {
+  margin: 20px 0 18px;
 }
 
 .training__text_block {

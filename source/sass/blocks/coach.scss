@@ -11,11 +11,12 @@
   display: grid;
   grid-template-columns: 1fr;
   margin-top: 50px;
+  grid-gap: 2em;
 
   @media (min-width: $viewpoint--desktop) {
     margin-top: 100px;
     grid-template-columns: 1fr 2fr;
-
+    grid-gap: 1em;
   }
 }
 
@@ -45,4 +46,9 @@
 
 .coach__subheader {
   margin: 0;
+  text-align: center;
+
+  @media (min-width: $viewpoint--desktop) {
+    text-align: left;
+  }
 }

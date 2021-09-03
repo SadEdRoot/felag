@@ -11,6 +11,19 @@
 }
 
 .container--pads {
-  padding-top: 80px;
-  padding-bottom: 60px;
+  padding-top: 50px;
+  padding-bottom: 40px;
+
+  @media (min-width: $viewpoint--desktop) {
+    padding-top: 80px;
+    padding-bottom: 60px;
+  }
+}
+
+.no-mobile {
+  display: none;
+
+  @media (min-width: $viewpoint--desktop) {
+    display: block;
+  }
 }

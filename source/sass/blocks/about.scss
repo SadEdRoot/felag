@@ -13,6 +13,7 @@
 }
 
 .about__grid {
+  padding-bottom: 10px;
   @media (min-width: $viewpoint--desktop) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -23,6 +24,7 @@
 }
 .about__card {
   max-width: 550px;
+  margin: 0 auto;
   @media (min-width: $viewpoint--desktop) {
 
   }

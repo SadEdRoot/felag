@@ -2,7 +2,7 @@
   //TODO: сделать фиксированное меню с появляющимся бакграундом.
   position: fixed;
   width: 100%;
-  z-index: 10;
+  z-index: 100;
   background-color: $bg-hard-black;
 
   @media (min-width: $viewpoint--desktop){
@@ -12,13 +12,30 @@
 
 .page-header__wrapper {
   width: 100%;
+  min-height: 60px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+
+  @media (min-width: $viewpoint--desktop){
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-header__logo {
+  display: none;
+  width: 44px;
+  height: 51px;
+
+  @media (min-width: $viewpoint--desktop){
+    display: block;
+  }
 }
 
 .page-header__burger-btn {
   padding: 0;
+  height: 60px;
 
   color: $color-main-text;
 
@@ -58,6 +75,8 @@
 
     .page-header__menu-cross {
       display: block;
+      margin-bottom: 10px;
+      margin-top: 10px;
     }
   }
 }

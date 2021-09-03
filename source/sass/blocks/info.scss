@@ -1,0 +1,7 @@
+.info__grid {
+  @media (min-width: 1000px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+  }
+}

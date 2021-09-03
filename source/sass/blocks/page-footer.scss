@@ -25,13 +25,24 @@
   color: $color-red-text;
   width: fit-content;
 
+  &:hover {
+    color: $color-red-bg;
+  }
+
+  &:active {
+    color: $color-second-text;
+  }
+
   &--center {
     display: block;
     margin-right: auto;
     margin-left: auto;
     font-size: 18px;
   }
+
 }
+
+page-footer__prpolicy
 
 .page-footer__year {
   text-align: center;

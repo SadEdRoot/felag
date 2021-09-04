@@ -2,7 +2,7 @@
   background-color: $bg-hard-black;
   overflow:hidden;
   //min-height: 1200px;
-  background-image: url("/img/small-wolf.png");
+  background-image: url("https://sadedroot.github.io/felag/img/small-wolf.png");
   background-repeat: no-repeat;
   background-position: left 0 top 70px;
 
@@ -10,7 +10,7 @@
     background-position: right 10% top 70px;
   }
   @media (min-width: $viewpoint--desktop) {
-    background-image: url("/img/big-wolf.png");
+    background-image: url("https://sadedroot.github.io/felag/img/big-wolf.png");
     background-position: right 35% top 30px;
   }
 }

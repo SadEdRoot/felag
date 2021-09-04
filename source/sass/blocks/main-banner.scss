@@ -16,7 +16,10 @@
 }
 
 .main-banner__container {
+  padding-top: 10px;
+
   @media (min-width: $viewpoint--desktop) {
+    padding-top: 25px;
     padding-bottom: 50px;
   }
 }

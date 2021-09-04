@@ -1,57 +1,43 @@
 .main-banner {
   background-color: $bg-hard-black;
   overflow:hidden;
-  min-height: 1200px;
+  //min-height: 1200px;
+  background-image: url("/img/small-wolf.png");
+  background-repeat: no-repeat;
+  background-position: left 0 top 70px;
+
+  @media (min-width: 380px) {
+    background-position: right 10% top 70px;
+  }
+  @media (min-width: $viewpoint--desktop) {
+    background-image: url("/img/big-wolf.png");
+    background-position: right 35% top 30px;
+  }
 }
 
 .main-banner__container {
-  position: relative;
-
+  @media (min-width: $viewpoint--desktop) {
+    padding-bottom: 50px;
+  }
 }
-
-.main-banner__logo {
-  position: absolute;
-  top: 0;
-  left: 67%;
-  transform: translateX(-50%);
-}
-
 .main-banner__header {
-  position: absolute;
-  padding: 0;
-  margin: 0;
+
   white-space: pre-wrap;
   font-family: $font-family--bebas;
   font-size: 64px;
   line-height: 78px;
 
   @media (min-width: $viewpoint--desktop) {
-    top: 200px;
     font-size: 121px;
     line-height: 145px;
   }
 }
 
 .main-banner__text-content {
-
   width: 100%;
   background-color: $color-soft-black;
   margin: 0 auto;
   padding: 35px 20px;
   text-align: justify;
-
-  @media (min-width: $viewpoint--desktop) {
-    position: absolute;
-    top: 870px;
-    left: 50%;
-    transform: translateX(-50%);
-    max-width: 920px;
-    opacity: 0.85;
-    font-size: 24px;
-    line-height: 28px;
-  }
-}
-
-.main-banner__text-content p {
-  margin: 0;
+  opacity: 0.85;
 }

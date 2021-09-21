@@ -1,14 +1,22 @@
 Website for Wellington Medieval Armoured Combat club 'Felag'
 
-Project:
+####Project:
+Home page for local HMB Club in Wellington New Zealand.
 
-Clone 
-git clone ... 
 
-Install 
+####Clone 
+git clone ... as usual 
+
+####Install 
 yarn install
 
-Deploy
+####Deploy
 git subtree push --prefix build origin gh-pages
 
-Author: Eduard Sadrutdinov
+#####Error: gh-pages (non-fast-forward)
+
+git push origin 'git subtree push --prefix build origin gh-pages':gh-pages --force
+
+
+####Author: 
+Eduard Sadrutdinov

@@ -80,7 +80,8 @@ const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/*.ico"
+    "source/*.ico",
+    "public/*"
   ], {
     base: "source"
   })
@@ -88,6 +89,19 @@ const copy = () => {
 }
 
 exports.copy = copy;
+
+//Copy public
+
+const copyPub = () => {
+  return gulp.src([
+    "public/*"
+  ], {
+    base: "public"
+  })
+    .pipe(gulp.dest("build"));
+}
+
+exports.copyPub = copyPub;
 
 //Clean
 
@@ -125,6 +139,7 @@ exports.scripts = scripts;
 const build = gulp.series(
   clean,
   copy,
+  copyPub,
   styles,
   sprite,
   html,

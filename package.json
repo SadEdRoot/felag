@@ -9,7 +9,7 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "styles": "gulp styles",
+    "styles": "gulp ststaryles",
     "start": "gulp",
     "optimize": "gulp optimize"
   },
